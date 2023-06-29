@@ -4,35 +4,40 @@ var scissors = "scissors";
 
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 confirm("You chose " + userChoice + ". Is this correct?");
-var computerChoice = Math.random();
+alert("Open the console to see the Computer's choice!")
 
-if (computerChoice < 0.33) {
+var computerChoice = Math.floor(Math.random()*3);
+
+if (computerChoice = 0) {
     computerChoice = rock;}
-else if(computerChoice > 0.34, and <= 0.67) {
+else if(computerChoice = 1) {
     computerChoice = paper;}
     else {computerChoice = scissors;};
 
-console.log("Computer: " + computerChoice);
+console.log("Computer chose: " + computerChoice);
 
-var compare = function(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        return "The result is a tie!";}
-    else if (userChoice === rock) {
-        if (computerChoice === scissors) {
-            return "rock wins";}
-        else {
-            return "paper wins";}
-    }
-    else if (userChoice === paper) {
-        if (computerChoice === rock) {
-            return "paper wins";}
-        else {
-            return "scissors wins";}
-    }
-    else if (userChoice === scissors) {
-        if (computerChoice === rock) {
-            return "rock wins";}
-        else {
-            return "scissors wins";}
-    }
-}
+if (computerChoice==rock)
+    {if (userChoice==rock)
+        {alert("It's a tie!");}
+    else if (userChoice==paper)
+        {alert("You win!");}
+    else if (userChoice==scissors)
+        {alert("You lose!");}}
+
+if (computerChoice==paper)
+    {if (userChoice==paper)
+        {alert("It's a tie!");}
+    else if (userChoice==scissors)
+        {alert("You win!");}
+    else if (userChoice==rock)
+        {alert("You lose!");}}
+
+if (computerChoice==scissors)
+    {if (userChoice==scissors)
+        {alert("It's a tie!");}
+    else if (userChoice==rock)
+        {alert("You win!");}
+    else if (userChoice==paper)
+        {alert("You lose!");}}
+
+
